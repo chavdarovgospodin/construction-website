@@ -1,0 +1,130 @@
+@import '../../styles/mixins.scss';
+
+.header {
+  background-color: #1e2126;
+  display: flex;
+  min-height: 70px;
+  height: auto;
+  align-items: center;
+
+  .container {
+    .pull-left {
+      list-style: none;
+
+      a {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        color: #e8e8e8;
+        line-height: 50px;
+        margin-right: 60px;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        -webkit-transition: all 400ms linear 0s;
+        -o-transition: all 400ms linear 0s;
+        transition: all 400ms linear 0s;
+
+        i {
+          font-size: 20px;
+          color: #e8e8e8;
+          padding-right: 10px;
+        }
+      }
+
+      a:first-child {
+        span {
+          color: #ffcd00;
+          margin-right: 5px;
+        }
+      }
+
+      a:hover {
+        color: #337ab7;
+      }
+
+      a:first-child {
+        margin-left: 40px;
+      }
+
+      a:last-child {
+        margin-right: 0px;
+      }
+
+      span {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        color: #e8e8e8;
+        line-height: 50px;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        transition: all 400ms linear 0s;
+      }
+
+      @include all-but-desktop {
+        a {
+          margin-left: 5px !important;
+          margin-right: 5px;
+        }
+      }
+
+      @include small-tablet {
+        display: flex;
+        flex-direction: column;
+        float: none;
+      }
+
+      @include all-mobile {
+        float: none;
+        a:nth-child(2),
+        a:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    .pull-right {
+      margin-right: 40px;
+
+      ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+          display: inline-block;
+          margin-right: 20px;
+
+          a {
+            font-size: 20px;
+            color: #e8e8e8;
+            line-height: 50px;
+            -webkit-transition: all 400ms linear 0s;
+            -o-transition: all 400ms linear 0s;
+            transition: all 400ms linear 0s;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: #337ab7;
+          }
+        }
+      }
+
+      @include all-but-desktop {
+        float: none;
+      }
+
+      @include small-tablet {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @include all-mobile {
+        margin-right: 0;
+        display: none;
+      }
+    }
+  }
+}

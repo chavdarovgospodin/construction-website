@@ -1,0 +1,21 @@
+@import './styles/mixins.scss';
+
+.App {
+  text-align: center;
+  width: auto;
+
+  @include small-mobile {
+    width: fit-content;
+  }
+}
+
+.navigation-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+img {
+  vertical-align: middle;
+}

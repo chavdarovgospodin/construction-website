@@ -1,0 +1,104 @@
+@import '../../styles/mixins.scss';
+
+.contact {
+  margin-top: 50px;
+
+  h2 {
+    text-align: left;
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    color: #31353d;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 12px;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  &_us {
+    height: 400px;
+    background: #575b61;
+    text-align: center;
+    color: #e8e8e8;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+  }
+
+  h4 {
+    margin-left: 10px;
+  }
+
+  .facebook,
+  .phone,
+  .email {
+    width: 100%;
+    background: #575b61;
+    height: 120px;
+    margin-bottom: 14px;
+  }
+
+  .facebook,
+  .phone,
+  .email {
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #ffcd00;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #31353d;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: color 0.5s;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background: #ffcd00;
+      height: 250px;
+      width: 580px;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -50px;
+      transition: all 0.7s;
+    }
+    &:hover {
+      color: #ffcd00;
+      &:before {
+        bottom: 100%;
+      }
+    }
+
+    .content {
+      margin-top: 45px;
+
+      i {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+  @include all-but-desktop {
+    .facebook,
+    .phone,
+    .email {
+      &:before {
+        border-radius: 0;
+      }
+    }
+  }
+}
