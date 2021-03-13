@@ -4,7 +4,7 @@ import './styles.scss';
 
 export const Service = ({ services, serviceName }) => {
   return (
-    <section className="services col-md-3 mt-5 mb-5">
+    <section className="services col-md-4 mt-5 mb-5">
       <hr/>
       <div className="service-name">
         <h2>{serviceName}</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import CONSTANTS from '../../utils/constants';
 
 import './styles.scss';
 
@@ -71,7 +72,7 @@ export const Navigation = () => {
               </a>
             </li>
             <li className="nav-item__phone">
-              <a className="nav-link" href="tel:5554280940">
+              <a className="nav-link" href={`tel:${CONSTANTS.PHONE}`}>
                 <svg
                   aria-hidden="true"
                   focusable="false"

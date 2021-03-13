@@ -19,6 +19,8 @@ export const Bathrooms = [
   'Bathroom Supplier',
   'Wet Rooms',
   'Disabled Bathrooms / Showers',
+  'Styles',
+  'Plumbing',
 ];
 
 export const Builder = [
@@ -27,6 +29,10 @@ export const Builder = [
   'Windows',
   'Doors',
   'Decking',
+  'Brickwork',
+  'Slabs',
+  'Extension',
+  'Loft',
 ];
 
 export const Bedrooms = [
@@ -34,3 +40,9 @@ export const Bedrooms = [
   'Bespoke Furniture',
   'Bespoke Beds',
 ];
+
+export const Gardens = [
+  'Slabs',
+  'Garden bench',
+  'Paving stone',
+]

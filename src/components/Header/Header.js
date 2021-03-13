@@ -1,4 +1,5 @@
 import React from 'react';
+import CONSTANTS from '../../utils/constants';
 
 import './styles.scss';
 
@@ -10,19 +11,19 @@ export const Header = () => (
           <span>Val</span>
           <span>Constuction Services</span>
         </a>
-        <a href="#" target="_blank">
+        <a href={CONSTANTS.ADDRESS.link} target="_blank">
           <i className="fa fa-map-marker" />
-          1234 Cafficic, California
+          {CONSTANTS.ADDRESS.text}
         </a>
-        <a href="mailto:webmaster@example.com">
+        <a href={`mailto:${CONSTANTS.EMAIL}`}>
           <i className="fa fa-envelope" />
-          webmaster@example.com
+          {CONSTANTS.EMAIL}
         </a>
       </div>
       <div className="pull-right">
         <ul className="header_social">
           <li>
-            <a href="#">
+            <a href={CONSTANTS.FACEBOOK} target='_blank'>
               <i className="fa fa-facebook-square" target="_blank" />
             </a>
           </li>

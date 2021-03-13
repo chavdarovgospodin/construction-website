@@ -13,6 +13,7 @@ export const Services = () => {
         <Service services={services.Bathrooms} serviceName="Bathrooms" />
         <Service services={services.Bedrooms} serviceName="Bedrooms" />
         <Service services={services.Builder} serviceName="Builder" />
+        <Service services={services.Gardens} serviceName="Gardens" />
       </div>
     </div>
   );

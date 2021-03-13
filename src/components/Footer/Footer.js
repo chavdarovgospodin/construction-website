@@ -1,6 +1,7 @@
 import React from 'react';
 import linkedin from '../../assets/images/linkedin.png';
 import footerLogo from '../../assets/images/footer-logo.png';
+import CONSTANTS from '../../utils/constants';
 import './styles.scss';
 
 export const Footer = () => (
@@ -32,26 +33,26 @@ export const Footer = () => (
                   <i className="fa fa-map-marker"></i>
                   <a
                     className="nav-link"
-                    href="https://maps.google.com/maps?q=London"
+                    href={CONSTANTS.ADDRESS.link}
                     target="_blank"
                   >
-                    1234 Cafficic, London, UK
+                    {CONSTANTS.ADDRESS.text}
                   </a>
                 </div>
                 <div className="media">
                   <i className="fa fa-phone"></i>
-                  <a className="nav-link" href="tel:5554280940">
-                    555-428-0940
+                  <a className="nav-link" href={`tel:${CONSTANTS.PHONE}`}>
+                    {CONSTANTS.PHONE}
                   </a>
                 </div>
                 <div className="media">
-                  <a href="mailto:webmaster@example.com">
+                  <a href={`mailto:${CONSTANTS.EMAIL}`}> 
                     <i className="fa fa-envelope"></i>
-                    webmaster@example.com
+                    {CONSTANTS.EMAIL}
                   </a>
                 </div>
                 <div className="media">
-                  <a href="#" target="_blank">
+                  <a href={CONSTANTS.FACEBOOK} target='_blank'>
                     <i className="fa fa-facebook-square"></i>
                     Facebook page
                   </a>
@@ -62,8 +63,8 @@ export const Footer = () => (
           <div className="col-md-4 col-sm-12">
             <aside className="call_us_widget">
               <h5>Give Us A Call</h5>
-              <h4>(012) 3456789</h4>
-              <a className="get_bg_btn" href="#">
+              <h4>{CONSTANTS.PHONE}</h4>
+              <a className="get_bg_btn" href={`tel:${CONSTANTS.PHONE}`}>
                 Call us
               </a>
             </aside>
@@ -74,9 +75,9 @@ export const Footer = () => (
     <div className="footer-copyright">
       <div className="container">
         <h4>
-          Copyright ©2020 All rights reserved | This website is made by
+          Copyright ©2021 All rights reserved | This website is made by
           <a
-            href="https://www.linkedin.com/in/gospodin-chavdarov-ab2435158/"
+            href={CONSTANTS.LINKEDIN}
             target="_blank"
           >
             Gospodin Chavdarov
