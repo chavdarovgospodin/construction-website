@@ -10,7 +10,7 @@ export const Service = ({ services, serviceName }) => {
         <h2>{serviceName}</h2>
       </div>
       <ul>
-        {services.map((service, index) => {
+        {services && services.map((service, index) => {
           return (
             <li className="service-item" key={index}>
               <span>{service}</span>

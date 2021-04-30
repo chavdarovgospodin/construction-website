@@ -1,5 +1,9 @@
 @import '../../styles/mixins.scss';
 
+.footer__comming-soon {
+  position: fixed !important;
+}
+
 .footer {
   position: relative;
   right: 0;

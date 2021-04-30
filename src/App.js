@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useRef, useState, Component } from 'react';
-import { About, Services, Contact, Kitchens, Gardens } from './pages';
+import { About, Services, Contact, Kitchens, Gardens, CommingSoon } from './pages';
 import { Navigation, Header, Thumbnails, Footer } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import WOW from 'wowjs';
@@ -39,6 +39,8 @@ function App() {
           <Route path="/kitchens" exact component={Kitchens} />
           <Route path="/gardens" exact component={Gardens} />
           <Route path="/gallery" exact component={Thumbnails} />
+          <Route component={CommingSoon}/>
+          {/* to do */}
         </Switch>
         <Footer />
       </div>

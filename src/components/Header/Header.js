@@ -8,8 +8,8 @@ export const Header = () => (
     <div className="container">
       <div className="pull-left">
         <a href="/">
-          <span>Val</span>
-          <span>Constuction Services</span>
+          <span>VAL DIM</span>
+          <span>CONSTRUCTION LTD</span>
         </a>
         <a href={CONSTANTS.ADDRESS.link} target="_blank">
           <i className="fa fa-map-marker" />

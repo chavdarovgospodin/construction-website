@@ -1,16 +1,7 @@
 export const Kitchens = [
-  'Acrylic Worktops',
-  'Bespoke Kitchens',
-  'Kitchen Doors',
-  'Kitchen Fitters',
   'Kitchen Refurbishments',
-  'Kitchen Supplier',
-  'Kitchen Fitter',
-  'Laminate Worktops',
-  'Marble Worktops',
-  'Quartz Worktops',
+  'Kitchen Doors',
   'Replacement Doors and Drawers',
-  'Solid Wood Worktops',
   'Worktops',
 ];
 
@@ -45,4 +36,10 @@ export const Gardens = [
   'Slabs',
   'Garden bench',
   'Paving stone',
+]
+
+export const Painting = [
+  "Walls",
+  'Windows',
+  'Doors',
 ]

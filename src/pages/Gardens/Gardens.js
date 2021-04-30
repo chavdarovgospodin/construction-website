@@ -4,7 +4,7 @@ import SimpleReactLightbox from 'simple-react-lightbox';
 import { gardens } from '../../utils/images';
 
 export const Gardens = () => (
-  <div className="container">
+  <div className="container mb-5">
     <section className="kitchens">
       <div className="container-fluid p-0">
         <SimpleReactLightbox>

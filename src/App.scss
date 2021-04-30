@@ -1,9 +1,11 @@
 @import './styles/mixins.scss';
 
 .App {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
   text-align: center;
   width: auto;
-
   @include small-mobile {
     width: fit-content;
   }

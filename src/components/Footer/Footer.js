@@ -2,10 +2,23 @@ import React from 'react';
 import linkedin from '../../assets/images/linkedin.png';
 import footerLogo from '../../assets/images/footer-logo.png';
 import CONSTANTS from '../../utils/constants';
+import { useLocation } from 'react-router-dom';
+import { checkUrl } from '../../utils/utils';
+import classnames from 'classnames';
 import './styles.scss';
 
-export const Footer = () => (
-  <div className="footer">
+export const Footer = () => {
+  const location = useLocation();
+  const isUrlValid = checkUrl(location.pathname)
+
+  return (
+    <div className = {classnames(
+      'footer',
+      {
+          'footer__comming-soon': !isUrlValid,
+      },
+  )}
+    >
     <div className="footer-widgets">
       <div className="container">
         <div className="row">
@@ -18,8 +31,7 @@ export const Footer = () => (
                 <span className="third">S.</span>
               </div>
               <p>
-                Val Construction Services Val Construction Services Val
-                Construction Services Val Construction Services
+                {CONSTANTS.NAME}
               </p>
             </aside>
           </div>
@@ -87,4 +99,6 @@ export const Footer = () => (
       </div>
     </div>
   </div>
-);
+
+  )
+}

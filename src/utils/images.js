@@ -1,3 +1,5 @@
+import extension from '../assets/images/extension.jpg';
+import painting2 from '../assets/images/painting2.jpg';
 import kitchen from '../assets/images/kitchens.png';
 import flooring from '../assets/images/Flooring.jpg';
 import bathrooms from '../assets/images/bathrooms.jpg';
@@ -53,12 +55,12 @@ export const kitchens = [
   },
 ];
 export const thumbnails = [
-  {
-    source: kitchen,
-    alt: 'Kitchens',
-    caption: 'Kitchens',
-    url: '/kitchens',
-  },
+  // {
+  //   source: kitchen,
+  //   alt: 'Kitchens',
+  //   caption: 'Kitchens',
+  //   url: '/kitchens',
+  // },
   {
     source: garden,
     alt: 'Gardens',
@@ -66,10 +68,16 @@ export const thumbnails = [
     url: '/gardens',
   },
   {
-    source: flooring,
-    alt: 'Flooring',
-    caption: 'Flooring',
-    url: '/flooring',
+    source: kitchen,
+    alt: 'Kitchens',
+    caption: 'Kitchens',
+    url: '/kitchens',
+  },
+  {
+    source: extension,
+    alt: 'Extensions',
+    caption: 'Extensions',
+    url: '/extensions',
   },
   {
     source: bathrooms,
@@ -78,15 +86,15 @@ export const thumbnails = [
     url: '/bathrooms',
   },
   {
-    source: kitchen,
-    alt: 'Kitchens',
-    caption: 'Kitchens',
-    url: '/kitchens',
+    source: painting2,
+    alt: 'Painting and Decorating',
+    caption: 'Painting and Decorating',
+    url: '/painting',
   },
   {
     source: flooring,
-    alt: 'Flooring',
-    caption: 'Flooring',
+    alt: 'Tiling and Flooring',
+    caption: 'Tiling and Flooring',
     url: '/flooring',
   },
 ];
