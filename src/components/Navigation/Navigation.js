@@ -13,7 +13,7 @@ export const Navigation = () => {
         <div className="navbar-brand">
           <span className="first">V.</span>
           <span className="second">C.</span>
-          <span className="third">S.</span>
+          <span className="third">LTD</span>
         </div>
         <button
           className="navbar-toggler"

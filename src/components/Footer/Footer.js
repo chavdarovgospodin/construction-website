@@ -25,7 +25,7 @@ export const Footer = () => {
           <div className="col-md-4 col-sm-12">
             <aside className="about_widget">
               <div className="footer_title">
-                <img src={footerLogo} alt="V.C.S." />
+                <img src={footerLogo} alt="V.C. LTD" />
                 <span className="first">V.</span>
                 <span className="second">C.</span>
                 <span className="third">S.</span>
