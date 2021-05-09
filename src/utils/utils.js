@@ -6,7 +6,8 @@ export const checkUrl = (url) => {
         '/gallery', 
         '/contant', 
         '/gardens', 
-        '/kitchens'
+        '/kitchens',
+        '/contact',
     ];
    
     return urls.some((url_)=> url === url_);
