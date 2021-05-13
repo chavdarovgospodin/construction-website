@@ -10,17 +10,19 @@ const importAll = (r) => {
   r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
   return images;
 }
+  
+export const gardens_ = importAll(require.context('../assets/images/Gardens', false, /\.(png|jpe?g|svg)$/));
+export const bathrooms_ = importAll(require.context('../assets/images/Bathrooms', false, /\.(png|jpe?g|svg)$/));
+export const painting_ = importAll(require.context('../assets/images/Painting', false, /\.(png|jpe?g|svg)$/));
 
-const images = importAll(require.context('../assets/images/Gardens', false, /\.(png|jpe?g|svg)$/))
-
-export const gardens = [];
-
-Object.keys(images).map((key)=> {
-  gardens.push({
-    source: images[key],
-    alt: 'garden',
-  })
-});
+export const getImages = (images, path) => {
+  return Object.keys(images).map((key)=> {
+    return {
+      source: images[key],
+      alt: path,
+    }
+  });
+}
 
 export const kitchens = [
   {
@@ -68,18 +70,6 @@ export const thumbnails = [
     url: '/gardens',
   },
   {
-    source: kitchen,
-    alt: 'Kitchens',
-    caption: 'Kitchens',
-    url: '/kitchens',
-  },
-  {
-    source: extension,
-    alt: 'Extensions',
-    caption: 'Extensions',
-    url: '/extensions',
-  },
-  {
     source: bathrooms,
     alt: 'Bathrooms',
     caption: 'Bathrooms',
@@ -90,6 +80,18 @@ export const thumbnails = [
     alt: 'Painting and Decorating',
     caption: 'Painting and Decorating',
     url: '/painting',
+  },
+  {
+    source: kitchen,
+    alt: 'Kitchens',
+    caption: 'Kitchens',
+    url: '/kitchens',
+  },
+  {
+    source: extension,
+    alt: 'Extensions',
+    caption: 'Extensions',
+    url: '/extensions',
   },
   {
     source: flooring,

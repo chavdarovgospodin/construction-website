@@ -15,20 +15,10 @@ export const About = () => (
             <h6>All About US</h6>
           </div>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-            ab illo inventore veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-            qui ratione voluptatem sequi nesciunt.
+            Are you looking to enhance or improve your property? Thinking of extending your home or converting your current loft space to add more room? In today’s uncertain market at least you can be sure of one thing by improving your property it will only add value.
           </p>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-            ab illo inventore veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-            qui ratione voluptatem sequi nesciunt.
+          Val Dim constraction Ltd can take care of various building projects including extending your property to maximise it’s potential or converting your current loft into a more habitable space. You may be thinking of up grading your kitchen or bathroom.
           </p>
         </div>
       <div className="col-md-7 mb-5">

@@ -1,4 +1,5 @@
 import React from 'react';
+import PhoneModal from '../../components/PhoneModal';
 import linkedin from '../../assets/images/linkedin.png';
 import footerLogo from '../../assets/images/footer-logo.png';
 import CONSTANTS from '../../utils/constants';
@@ -25,10 +26,11 @@ export const Footer = () => {
           <div className="col-md-4 col-sm-12">
             <aside className="about_widget">
               <div className="footer_title">
-                <img src={footerLogo} alt="V.C. LTD" />
+                <img src={footerLogo} alt="V.C.D. LTD" />
                 <span className="first">V.</span>
-                <span className="second">C.</span>
-                <span className="third">S.</span>
+                <span className="second">D.</span>
+                <span className="third">C</span>
+                <span className="first ml-2">LTD</span>
               </div>
               <p>
                 {CONSTANTS.NAME}
@@ -53,8 +55,11 @@ export const Footer = () => {
                 </div>
                 <div className="media">
                   <i className="fa fa-phone"></i>
-                  <a className="nav-link" href={`tel:${CONSTANTS.PHONE}`}>
-                    {CONSTANTS.PHONE}
+                  <a className="nav-link phone1" href={`tel:${CONSTANTS.PHONE.phone1}`}>
+                    {CONSTANTS.PHONE.phone1}
+                  </a>
+                  <a className="nav-link phone2" href={`tel:${CONSTANTS.PHONE.phone2}`}>
+                    {CONSTANTS.PHONE.phone2}
                   </a>
                 </div>
                 <div className="media">
@@ -74,11 +79,13 @@ export const Footer = () => {
           </div>
           <div className="col-md-4 col-sm-12">
             <aside className="call_us_widget">
-              <h5>Give Us A Call</h5>
-              <h4>{CONSTANTS.PHONE}</h4>
-              <a className="get_bg_btn" href={`tel:${CONSTANTS.PHONE}`}>
+              <h5 className="mb-2 mb-md-5">Contact us now</h5>
+              {/* <h4 className="call_us_widget-phone1">{CONSTANTS.PHONE.phone1}</h4>
+              <h4 className="call_us_widget-phone2">{CONSTANTS.PHONE.phone2}</h4> */}
+              <PhoneModal text ='call us'/>
+              {/* <a className="get_bg_btn" href={`tel:${CONSTANTS.PHONE.phone1}`}>
                 Call us
-              </a>
+              </a> */}
             </aside>
           </div>
         </div>

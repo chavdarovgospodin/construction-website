@@ -15,7 +15,7 @@ export const Contact = () => (
       <div className="row mt-5">
         <div className="col-md-7 mb-5">
           <div className="contact_us p-1">
-            <h4 className="mt-3">Phone: {CONSTANTS.PHONE}</h4>
+            <h4 className="mt-3">Phones: {CONSTANTS.PHONE.phone2}</h4>
             <h4 className="mt-5">Adress: {CONSTANTS.ADDRESS.text}</h4>
           </div>
         </div>

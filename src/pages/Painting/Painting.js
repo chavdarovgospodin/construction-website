@@ -1,17 +1,17 @@
 import React from 'react';
 import { Gallery } from '../../components';
 import SimpleReactLightbox from 'simple-react-lightbox';
-import { getImages, gardens_ } from '../../utils/images';
+import { getImages, painting_ } from '../../utils/images';
 
-export const Gardens = () => {
-  const gardens = getImages(gardens_, 'garden');
+export const Painting = () => {
+  const painting = getImages(painting_, 'painting')
 
   return (
     <div className="container mb-5">
-      <section className="kitchens">
+      <section className="painting">
         <div className="container-fluid p-0">
           <SimpleReactLightbox>
-            <Gallery images={gardens} />
+            <Gallery images={painting} />
           </SimpleReactLightbox>
         </div>
       </section>

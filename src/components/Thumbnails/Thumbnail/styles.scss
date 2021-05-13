@@ -27,6 +27,11 @@
       opacity: 0;
       color: #fff;
 
+      .mobile & {
+        opacity: 100;
+        transform: scale(1.2);
+      }
+
       &-content {
         position: absolute;
         top: 86%;
@@ -47,10 +52,11 @@
         }
       }
     }
-
-    &-caption:hover {
-      opacity: 1;
-      transform: scale(1.2);
+    .desktop &, .tablet & {
+      &-caption:hover {
+        opacity: 1;
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -59,6 +65,8 @@
   }
 
   .thumbnail-box:hover img {
-    transform: scale(1.1);
+    .desktop &, .tablet & {
+      transform: scale(1.1);
+    }
   }
 }

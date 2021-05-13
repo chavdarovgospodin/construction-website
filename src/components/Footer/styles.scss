@@ -125,6 +125,10 @@
 
         .nav-link {
           padding: 0.5rem 0rem !important;
+
+          &.phone2 {
+            margin-left: 10px;
+          }
         }
       }
     }
@@ -143,7 +147,11 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         color: #ffcd00;
-        padding: 12px 0px 12px 0px;
+        padding: 12px 0px 0px 0px;
+      }
+
+      &-phone2 {
+        padding: 0px 0px 12px 0px !important;
       }
 
       .get_bg_btn {

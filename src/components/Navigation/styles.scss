@@ -12,12 +12,6 @@
     width: 100%;
   }
 
-  @include tablet-to-desktop {
-    .navbar-brand {
-      display: none;
-    }
-  }
-
   &-brand {
     span {
       font-size: 25px;
@@ -52,14 +46,14 @@
 
   li:last-child {
     margin-left: auto;
-    a {
-      -webkit-transition: all 400ms linear 0s;
-      -o-transition: all 400ms linear 0s;
-      transition: all 400ms linear 0s;
-    }
-    a:hover {
-      color: #5beb34 !important;
-    }
+    // a {
+    //   -webkit-transition: all 400ms linear 0s;
+    //   -o-transition: all 400ms linear 0s;
+    //   transition: all 400ms linear 0s;
+    // }
+    // a:hover {
+    //   color: #5beb34 !important;
+    // }
   }
 
   li {
