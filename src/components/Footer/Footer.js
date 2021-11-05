@@ -1,14 +1,14 @@
 import React from 'react';
 import PhoneModal from '../../components/PhoneModal';
 import linkedin from '../../assets/images/linkedin.png';
-import footerLogo from '../../assets/images/footer-logo.png';
+import footerLogo from '../../assets/images/FullLogo_Transparent.png';
 import CONSTANTS from '../../utils/constants';
 import { useLocation } from 'react-router-dom';
 import { checkUrl } from '../../utils/utils';
 import classnames from 'classnames';
 import './styles.scss';
 
-export const Footer = () => {
+export const Footer = ({breakPoint}) => {
   const location = useLocation();
   const isUrlValid = checkUrl(location.pathname)
 
@@ -25,13 +25,15 @@ export const Footer = () => {
         <div className="row">
           <div className="col-md-4 col-sm-12">
             <aside className="about_widget">
-              <div className="footer_title">
-                <img src={footerLogo} alt="V.C.D. LTD" />
-                <span className="first">V.</span>
-                <span className="second">D.</span>
-                <span className="third">C</span>
-                <span className="first ml-2">LTD</span>
-              </div>
+              {breakPoint !== 'mobile' && (
+                <div className="footer_title">
+                  <img src={footerLogo} alt="V.D.C. LTD"  width = "90px" height = "70px"/>
+                  <span className="first">V.</span>
+                  <span className="second">D.</span>
+                  <span className="third">C</span>
+                  <span className="first ml-2">LTD</span>
+                </div>
+              )}
               <p>
                 {CONSTANTS.NAME}
               </p>
@@ -39,9 +41,11 @@ export const Footer = () => {
           </div>
           <div className="col-md-4 col-sm-12">
             <aside className="adress_widget">
+            {breakPoint !== 'mobile' && (
               <div className="footer_title">
                 <h3>Address</h3>
               </div>
+            )}
               <div className="address_inner">
                 <div className="media">
                   <i className="fa fa-map-marker"></i>
@@ -79,10 +83,14 @@ export const Footer = () => {
           </div>
           <div className="col-md-4 col-sm-12">
             <aside className="call_us_widget">
+            {breakPoint !== 'mobile' && (
               <h5 className="mb-2 mb-md-5">Contact us now</h5>
+            )}
               {/* <h4 className="call_us_widget-phone1">{CONSTANTS.PHONE.phone1}</h4>
               <h4 className="call_us_widget-phone2">{CONSTANTS.PHONE.phone2}</h4> */}
-              <PhoneModal text ='call us'/>
+              <div className="mt-2 mt-lg-0">
+                <PhoneModal text ='call us'/>
+              </div>
               {/* <a className="get_bg_btn" href={`tel:${CONSTANTS.PHONE.phone1}`}>
                 Call us
               </a> */}

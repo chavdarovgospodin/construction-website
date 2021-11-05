@@ -1,21 +1,22 @@
 import React from 'react';
 import PhoneModal from '../PhoneModal';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import CONSTANTS from '../../utils/constants';
 
 import './styles.scss';
 
 export const Navigation = ({ breakPoint }) => {
   const location = useLocation();
+  const history = useHistory();
 
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light">
       <div className="container">
         {breakPoint !== 'desktop' && (
-        <div className="navbar-brand">
+        <div className="navbar-brand" onClick={()=> history.push('/')}>
           <span className="first">V.</span>
-          <span className="second">C.</span>
-          <span className="second mr-2">D.</span>
+          <span className="second">D.</span>
+          <span className="second mr-2">C.</span>
           <span className="third">LTD</span>
         </div>
         )}
@@ -59,7 +60,7 @@ export const Navigation = ({ breakPoint }) => {
             </li>
             <li
               className={`nav item ${
-                location.pathname === '/gallery' ? 'active' : ''
+               CONSTANTS.galleryUrls.some((url)=> url === location.pathname) ? 'active' : ''
               }`}
             >
               <a className="nav-link" href="/gallery">

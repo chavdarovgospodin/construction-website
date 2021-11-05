@@ -14,6 +14,10 @@ const CONSTANTS = {
     MOBILE: 479.9,
     TABLET: 1023.9,
     DESKTOP: 1024,
+    galleryUrls: ['/gardens', '/bathrooms', '/painting', '/kitchens', '/extensions', '/flooring', '/gallery'],
+    SERVICE_ID: 'valdim_constructions',
+    TEMPLATE_ID: 'template_hvly5pj',
+    USER_ID: 'user_JT07FhODF1RK09y9JEs1l',
 };
 
 export default CONSTANTS;

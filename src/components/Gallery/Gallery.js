@@ -39,9 +39,14 @@ export const Gallery = ({ images }) => (
         return (
           <div className="col-lg-4 col-sm-6 mt-lg-5 mt-sm-2 p-2" key={index}>
             <div className="thumbnail-box">
-            {/* <LazyLoad height={400}> */}
+              {images.length > 9 ? (
+                <LazyLoad height={400}>
+                  <img src={image.source} alt={image.alt} />
+                </LazyLoad> )
+                : (
                 <img src={image.source} alt={image.alt} />
-                {/* </LazyLoad> */}
+                )
+              }
             </div>
           </div>
         );

@@ -61,7 +61,7 @@ function App() {
           <Route component={CommingSoon}/>
           {/* to do */}
         </Switch>
-        <Footer />
+        <Footer breakPoint={breakPoint}/>
       </div>
     </Router>
   );

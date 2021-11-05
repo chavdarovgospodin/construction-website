@@ -1,7 +1,9 @@
 @import '../../styles/mixins.scss';
 
 .footer__comming-soon {
-  position: fixed !important;
+  .desktop &, .tablet & {
+    position: fixed !important;
+  }
 }
 
 .footer {
