@@ -12,6 +12,7 @@ export const Contact = () => {
   const [email, setEmail] = useState(null);
   const [message, setMessage] = useState(null);
 
+  const contactText = 'Contact us today whether you would like to get your project started, have a general enquiry or would like a no obligation quote. Either way we are here to help!';
   // const validateEmail = (e) => {
   //   const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //   return regex.test(e);
@@ -49,9 +50,7 @@ export const Contact = () => {
       <div className="container">
         <h2>Contact</h2>
         <h3>
-          Contact us today whether you would like to get your project started,
-          have a general enquiry or would like a no obligation quote. Either way
-          we are here to help!
+          {contactText}
         </h3>
         <div className="row mt-5">
           <div className="col-md-7 mb-5">

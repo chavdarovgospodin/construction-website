@@ -8,7 +8,7 @@ export const checkUrl = (url) => {
         '/gallery', 
         '/contant', 
         '/gardens', 
-        // '/kitchens',
+        '/kitchens',
         '/contact',
         '/bathrooms',
         '/painting',

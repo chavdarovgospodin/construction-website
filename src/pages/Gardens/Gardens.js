@@ -8,7 +8,7 @@ export const Gardens = () => {
 
   return (
     <div className="container mb-5">
-      <section className="kitchens">
+      <section className="gardens">
         <div className="container-fluid p-0">
           <SimpleReactLightbox>
             <Gallery images={gardens} />

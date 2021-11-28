@@ -14,6 +14,7 @@ const importAll = (r) => {
 export const gardens_ = importAll(require.context('../assets/images/Gardens', false, /\.(png|jpe?g|svg)$/));
 export const bathrooms_ = importAll(require.context('../assets/images/Bathrooms', false, /\.(png|jpe?g|svg)$/));
 export const painting_ = importAll(require.context('../assets/images/Painting', false, /\.(png|jpe?g|svg)$/));
+export const kitchens_ = importAll(require.context('../assets/images/Kitchens', false, /\.(png|jpe?g|svg)$/));
 
 export const getImages = (images, path) => {
   return Object.keys(images).map((key)=> {
@@ -23,39 +24,6 @@ export const getImages = (images, path) => {
     }
   });
 }
-
-export const kitchens = [
-  {
-    source: 'https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg',
-    alt: '123',
-    caption: '123',
-  },
-  {
-    source: 'https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg',
-    alt: '123',
-    caption: '123',
-  },
-  {
-    source: 'https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg',
-    alt: '123',
-    caption: '123',
-  },
-  {
-    source: 'https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg',
-    alt: '123',
-    caption: '123',
-  },
-  {
-    source: 'https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg',
-    alt: '123',
-    caption: '123',
-  },
-  {
-    source: 'https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg',
-    alt: '123',
-    caption: '123',
-  },
-];
 export const thumbnails = [
   // {
   //   source: kitchen,
